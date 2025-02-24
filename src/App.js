@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// App.jsx
+import React from 'react';
+import Header from './components/Header';
+import Meho from './components/Meho';
+import HowItWorks from './components/HowItWorks';
+import WelcomeBox from './components/WelcomeBox';
+import Testimonials from './components/Testimonials';
+import Footer from './components/Footer';
+import HeroSection from './components/HeroSection'; // Import the new component
+import './styles/global.scss';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <HeroSection />
+      <HowItWorks />
+      <WelcomeBox />
+      <Meho />
+      <Testimonials />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
