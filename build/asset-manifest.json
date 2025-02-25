@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3b740b8a.css",
+    "main.js": "/static/js/main.22d973d6.js",
+    "static/js/453.141727ca.chunk.js": "/static/js/453.141727ca.chunk.js",
+    "static/media/Group 837.png": "/static/media/Group 837.9bda52c44e45dc1da967.png",
+    "static/media/Mask Group 4.png": "/static/media/Mask Group 4.7ddbc638e71d72c9f411.png",
+    "static/media/Group 836.png": "/static/media/Group 836.643d530d769951946cb5.png",
+    "static/media/AdobeStock_343360291.png": "/static/media/AdobeStock_343360291.af25c7f0c8a4bbd51d5d.png",
+    "static/media/AdobeStock_317982032.png": "/static/media/AdobeStock_317982032.734b631163527a765649.png",
+    "static/media/AdobeStock_447498369.png": "/static/media/AdobeStock_447498369.6ecd77d42bb3ff542547.png",
+    "static/media/AdobeStock_72319945.png": "/static/media/AdobeStock_72319945.b0fd330e164affabbbb6.png",
+    "static/media/Group 839.png": "/static/media/Group 839.47ffd1a757604e1eb151.png",
+    "static/media/Group 843.png": "/static/media/Group 843.2e5e7797af85898c5f63.png",
+    "static/media/Group 844.png": "/static/media/Group 844.973cd39192ef1c130196.png",
+    "static/media/MouseMemoirs-Regular.ttf": "/static/media/MouseMemoirs-Regular.7f2e3f49a17c1e291d24.ttf",
+    "static/media/Wanlow Logo W Shield Pantone.png": "/static/media/Wanlow Logo W Shield Pantone.19ac1f73e8def5343ecd.png",
+    "static/media/Group 842.png": "/static/media/Group 842.6befed6912e04dc386a6.png",
+    "static/media/Path 618.png": "/static/media/Path 618.356394a98cfdd07cfdd1.png",
+    "static/media/Group 815.png": "/static/media/Group 815.83ec5dd051ba9a7c7430.png",
+    "static/media/Group 781.png": "/static/media/Group 781.0467f043080f54a36ddd.png",
+    "index.html": "/index.html",
+    "main.3b740b8a.css.map": "/static/css/main.3b740b8a.css.map",
+    "main.22d973d6.js.map": "/static/js/main.22d973d6.js.map",
+    "453.141727ca.chunk.js.map": "/static/js/453.141727ca.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b740b8a.css",
+    "static/js/main.22d973d6.js"
+  ]
+}
