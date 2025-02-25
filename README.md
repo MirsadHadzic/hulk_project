@@ -2,6 +2,28 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## REGARDING THE ORDER I HAVE TAKEN TO FINISH THIS PROJECT
+.build is for build, basically
+node_modules - node stuff
+public
+
+src (the folder I have my project in)
+src/assets/images/
+src/assets/components/Footer.jsx - ORDER: 7. 
+src/assets/components/Header.jsx - ORDER: 1.
+src/assets/components/HeroSection.jsx - ORDER: 2.
+src/assets/components/HowItWorks.jsx - ORDER: 3.
+src/assets/components/Meho.jsx - ORDER: 5.
+src/assets/components/Testimonials.jsx - ORDER: 6.
+src/assets/components/WelcomeBox.jsx - ORDER: 4.
+
+styles/fonts/
+styles/variables.scss - this is the part where colors are located
+
+styles/global.scss - MAIN PART OF THE WHOLE CODE, THIS IS WHERE EVERYTHING IS LOCATED
+
+App.js -ORDER IN WHICH SECTIONS ARE LOCATED
+
 ## Available Scripts
 
 In the project directory, you can run:

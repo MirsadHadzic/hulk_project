@@ -4,54 +4,41 @@ import '../styles/global.scss';
 const WelcomeBox = () => {
   return (
     <section className="welcome-box">
-      
       <div className="background"></div>
 
-     
-      <div className="right-image"></div>
-
-      
-      <div className="title-container">
-        <h2 className="welcome-title">The Welcome Box</h2>
-        <div className="stars"></div>
-      </div>
-
-     
-      <p className="description">
-        For the first delivery, every child receives the Welcome Box which is packed full of everything they'll need to kick off their outdoor fun of learning and discovery!
-      </p>
-
-      
-      <div className="item-list">
-       
-        <div className="item">
-          <div className="icon"></div>
-          <p className="item-text">Colorful backpack for all of your new gear</p>
+      {/* Left Content */}
+      <div className="left-content">
+        <div className="title-container">
+          <h2 className="welcome-title">The Welcome Box</h2>
+          <div className="stars"></div>
         </div>
 
-        {/* Treasure Map */}
-        <div className="item">
-          <div className="icon"></div>
-          <p className="item-text">Treasure Map to collect your monthly badges as you progress through the subscription</p>
+        <p className="description">
+          For the first delivery, every child receives the Welcome Box which is packed full of everything they'll need to kick off their outdoor fun of learning and discovery!
+        </p>
+
+        <div className="item-list">
+          <div className="item">
+            <div className="icon"></div>
+            <p className="item-text">Colorful backpack for all of your new gear</p>
+          </div>
+          <div className="item">
+            <div className="icon"></div>
+            <p className="item-text">Treasure Map to collect your monthly badges as you progress through the subscription</p>
+          </div>
+          <div className="item">
+            <div className="icon"></div>
+            <p className="item-text">Nature journal to keep track of your drawings and learnings</p>
+          </div>
+          <div className="item">
+            <div className="icon"></div>
+            <p className="item-text">Booklet full of activities, games, and learning material</p>
+          </div>
         </div>
 
-        {/* Nature Journal */}
-        <div className="item">
-          <div className="icon"></div>
-          <p className="item-text">Nature journal to keep track of your drawings and learnings</p>
-        </div>
-
-        {/* Booklet */}
-        <div className="item">
-          <div className="icon"></div>
-          <p className="item-text">Booklet full of activities, games, and learning material</p>
-        </div>
-      </div>
-
-      
-      <button className="orange-button">
-        {/* Inlined SVG */}
-        <svg
+        <button className="orange-button">
+            {/* SVG content here */}
+            <svg
           id="Component_28_1"
           data-name="Component 28 – 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -82,8 +69,12 @@ const WelcomeBox = () => {
               <tspan x="0" y="0">Get Your First Box</tspan>
             </text>
           </g>
-        </svg>
-      </button>
+          </svg>
+        </button>
+      </div>
+
+      {/* Right Image */}
+      <div className="right-image"></div>
     </section>
   );
 };

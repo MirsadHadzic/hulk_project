@@ -145,46 +145,104 @@ h6 {
 }
 
 /* Media Query for Small Screens */
+/* Media Query for Small Screens */
 @media (max-width: 767px) {
   .header {
-    padding: 0px 0px;
+    padding: 0px 15px;
     height: 70px;
+    display: flex;
+    justify-content: center; /* Center content */
+    align-items: center;
+    position: relative;
+  }
 
-    .left-nav ul {
-      gap: 10px;
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 11;
+    position: absolute;
+    left: 15px; /* Ensure it's on the left side */
+    top: 50%;
+    transform: translateY(-50%);
 
-      a {
-        font-size: 8px;
-      }
+    .bar {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      margin: 4px 0;
+      transition: all 0.3s ease;
     }
 
-    .logo img {
-      width: 100px;
+    /* Animate bars when menu is open */
+    .bar.open:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
     }
 
-    .right-section {
-      gap: 10px;
+    .bar.open:nth-child(2) {
+      opacity: 0;
+    }
 
-      .get-started button img {
-        width: 55px;
-      }
+    .bar.open:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+  }
 
-      .icon-container {
-        gap: 15px;
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Ensures the logo is truly centered */
+    text-align: center;
 
-        img {
-          width: 20px;
-        }
+    img {
+      width: 120px; /* Adjust size */
+    }
+  }
 
-        .icon-2-wrapper .blue-circle {
-          width: 10px;
-          height: 10px;
-          font-size: 10px;
+  .left-nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+
+      li {
+        margin: 10px 0;
+
+        a {
+          font-size: 14px;
+          color: #333;
+          text-decoration: none;
         }
       }
     }
   }
+
+  /* Show menu when active */
+  .left-nav.active {
+    display: flex;
+  }
+
+  .right-section {
+    display: none !important;  /* Ensures it's completely hidden */
+    visibility: hidden;
+    position: absolute; /* Prevents it from taking up space */
+  }
+  
 }
+
 
 
 /* Hero Section */
@@ -437,9 +495,9 @@ h6 {
         font-size: 18px;
         color: #483729;
         z-index: 2;
-        padding: 0 20px;
+        padding: 0 0px;
         line-height: 1.5;
-        margin-top: 20px;
+        margin-top: 1px;
       }
     }
   }
@@ -520,8 +578,9 @@ h6 {
   opacity: 1;
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
+  padding: 20px;
 
   /* Background Image */
   .background {
@@ -537,24 +596,34 @@ h6 {
     opacity: 1;
   }
 
+    /* Left Content Container */
+    .left-content {
+      position: relative;
+      width: 50%; // Adjust as needed
+      max-width: 600px; // Prevent content from stretching too far
+      padding-left: 5%; // Add some padding from the left edge
+      z-index: 2;
+    }
+
   /* Picture on the Right */
   .right-image {
     position: absolute;
     top: 80px;
-    left: 650px;
-    width: 684px;
+    //left: 650px;
+    right: 8%;
+    width: 45%;
     height: 645px;
     background: transparent url('../assets/images/Mask Group 4.png') 0% 0% no-repeat padding-box;
+    background-size: contain;
     opacity: 1;
+    z-index: 1;
   }
 
   .title-container {
-    position: absolute;
-    top: 50px;
-    left: 123px;
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: 20px; // Space between title and description
   }
 
   .welcome-title {
@@ -578,23 +647,17 @@ h6 {
 
 
   .description {
-    position: absolute;
-    top: 170px;
-    left: 123px;
-    width: 480px;
-    height: 80px;
+    width: 100%;
     font: normal normal normal 18px/28px Noto Sans Display;
     letter-spacing: 0px;
     color: #483729;
     text-align: left;
     opacity: 1;
+    margin-bottom: 20px; // Space between description and item list
   }
 
   .item-list {
-    position: absolute;
-    top: 280px;
-    left: 123px;
-    width: 480px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -621,9 +684,6 @@ h6 {
   }
 
   .orange-button {
-    position: absolute;
-    top: 650px;
-    left: 123px;
     width: 192px;
     height: 50px;
     background: transparent;
@@ -631,6 +691,8 @@ h6 {
     padding: 0;
     cursor: pointer;
     transition: filter 0.3s ease-out;
+    margin-top: 20px; // Space between item list and button
+
 
     svg {
       width: 100%;
@@ -1811,7 +1873,7 @@ h6 {
       position: static;
       width: 275px;
       height: 400px;
-      margin: 0 auto 20px; // centriraj logo i marginu
+      margin: 20 auto; // centriraj logo i marginu
     }
 
     .copyright,
